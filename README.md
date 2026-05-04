@@ -98,11 +98,11 @@ Interface otimizada para simplicidade e rapidez
 Baixo atrito operacional para o usuário final
 Dependência de conectividade com banco Oracle
 
-##Autor
+## Autor
 
 Valmir Moro
 Setor de TI – FEAS
 
-##Used IDE
+## Used IDE
 
 Visual Studio Code
