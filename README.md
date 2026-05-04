@@ -40,11 +40,10 @@ Aplicação web desenvolvida em Python para realização de votação institucio
 uvicorn app:app --host 0.0.0.0 --port 8000
 ```
 
-Acessar no navegador:
+Acessar no navegador: http://127.0.0.1:8000
 
-http://127.0.0.1:8000
+## Estrutura do projeto
 
-Estrutura do projeto
 feas_voting_system/
 ├── app.py
 ├── templates/
@@ -53,61 +52,57 @@ feas_voting_system/
 │   └── logo-feas.png
 ├── logs/
 └── venv/
-Requisitos do servidor
+
+## Requisitos do servidor
+
 Computador/Servidor com acesso ao banco Oracle
 Python 3 instalado
 Arquivo tnsnames.ora configurado
 Variável de ambiente TNS_ADMIN configurada
 Acesso liberado à porta da aplicação (ex: 8000)
 Permissão de execução de serviços Windows
-Configuração de produção
 
-Execução como serviço via NSSM:
+## Configuração de produção
 
-C:\nssm-2.24\win64\nssm.exe install votacao_feas
-Configuração
+Execução como serviço via NSSM: C:\nssm-2.24\win64\nssm.exe install votacao_feas
 
-Application Path:
+## Configuração
 
-C:\feas_voting_system\venv\Scripts\uvicorn.exe
+Application Path: C:\feas_voting_system\venv\Scripts\uvicorn.exe
 
-Arguments:
+Arguments: app:app --host 0.0.0.0 --port 8000
 
-app:app --host 0.0.0.0 --port 8000
+Startup Directory: C:\feas_voting_system
 
-Startup Directory:
-
-C:\feas_voting_system
-Inicialização do serviço
-C:\nssm-2.24\win64\nssm.exe start votacao_feas
+Inicialização do serviço: C:\nssm-2.24\win64\nssm.exe start votacao_feas
 
 O serviço deve estar configurado para iniciar automaticamente com o sistema operacional.
 
-Logs
+## Logs
 
-Arquivos gerados em:
+Arquivos gerados em: C:\feas_voting_system\logs\
 
-C:\feas_voting_system\logs\
+Arquivos: out.log (saída padrão) err.log (erros)
 
-Arquivos:
+## Segurança
 
-out.log (saída padrão)
-err.log (erros)
-Segurança
 Validação de usuário com múltiplos fatores (matrícula + CPF + data de nascimento)
 Prevenção de votos duplicados
 Registro de informações de acesso (IP e User-Agent)
 Execução restrita à rede interna
-Observações
+
+## Observações
+
 Aplicação projetada para uso interno institucional
 Interface otimizada para simplicidade e rapidez
 Baixo atrito operacional para o usuário final
 Dependência de conectividade com banco Oracle
-Autor
+
+##Autor
 
 Valmir Moro
 Setor de TI – FEAS
 
-Ambiente de desenvolvimento
+##Used IDE
 
-Used IDE: Visual Studio Code
+Visual Studio Code
