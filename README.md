@@ -38,10 +38,12 @@ Aplicação web desenvolvida em Python para realização de votação institucio
 
 ```bash
 uvicorn app:app --host 0.0.0.0 --port 8000
+```
 
 Acessar no navegador:
 
 http://127.0.0.1:8000
+
 Estrutura do projeto
 feas_voting_system/
 ├── app.py
@@ -63,7 +65,7 @@ Configuração de produção
 Execução como serviço via NSSM:
 
 C:\nssm-2.24\win64\nssm.exe install votacao_feas
-Configuração:
+Configuração
 
 Application Path:
 
@@ -76,7 +78,7 @@ app:app --host 0.0.0.0 --port 8000
 Startup Directory:
 
 C:\feas_voting_system
-Inicialização do serviço:
+Inicialização do serviço
 C:\nssm-2.24\win64\nssm.exe start votacao_feas
 
 O serviço deve estar configurado para iniciar automaticamente com o sistema operacional.
@@ -105,3 +107,7 @@ Autor
 
 Valmir Moro
 Setor de TI – FEAS
+
+Ambiente de desenvolvimento
+
+Used IDE: Visual Studio Code
